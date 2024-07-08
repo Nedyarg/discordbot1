@@ -1,8 +1,12 @@
 import discord
+from dotenv import dotenv_values
 from discord.ext import commands
 from discord_webhook import DiscordWebhook, DiscordEmbed
 bot = commands.Bot()
-token =
+secrets = dotenv_values(".env")
+#get the token from the .env file
+print(secrets['token'])
+token = secrets['token']
 
 
 days_in_year = 365
@@ -126,10 +130,7 @@ async def rps(ctx, answer=None):
 
 
 
-@bot.slash_command()
-async def dice(ctx, min=None, max=None):
-    for value in min and max:
-        print
+
         
     
 
@@ -137,7 +138,7 @@ async def dice(ctx, min=None, max=None):
 
 
 #run the bot with token
-bot.run("ODk2NjE5Mjk2MTI4NjM4OTk3.GTDEqB.Rucfsy5fqhculY6l8JFgPPUbLZju2id8wW2Hic")
+bot.run(token)
 
 
 
