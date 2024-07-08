@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 from discord_webhook import DiscordWebhook, DiscordEmbed
 bot = commands.Bot()
-token = 'ODk2NjE5Mjk2MTI4NjM4OTk3.GTDEqB.Rucfsy5fqhculY6l8JFgPPUbLZju2id8wW2Hic'
+token =
 
 
 days_in_year = 365
